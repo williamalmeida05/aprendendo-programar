@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* basicamente será um estilo padrão*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    margin: 44px;
+    margin-left: 76px;
+}
+
+.link-header{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.26px;
+    text-align: center;
+    letter-spacing: 0.875px;
+    color: #989D9C;
+    margin-right: 23px;
+    cursor: pointer;
+}
+
+.button-header{
+    background: #665AE1; /* cor do espaço que está o button*/
+    border: 1px solid #665AE1;
+    border-radius: 20.5px;
+    width: 130px;
+    height: 41px;
+    cursor: pointer; /* qunado passar o curso irá alterar para o ícone de mão*/
+    font-weight: 600; /* a letra vai ficar mais grossa*/
+    font-size: 24px; /* aumenta o tamanho da letra*/
+    line-height: 29.26px;
+    letter-spacing: 1px;
+    color: #FFFFFF; /* cor da letra*/
+}
+
+.button-header:active{
+    opacity: 0.5;
+}
+
+.container-left{
+    display: inline-block; /* faz com que a imagem fique de um lado e o texto do outro*/
+    margin-left: 125px;
+    width: 493px;
+    margin-bottom: 100px;
+    
+}
+
+img{
+    margin: 217px 0 0 125px;
+}
+
+
+h1{
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 121.9px;
+    letter-spacing: 0.596154px;
+    color: #515151;
+}
+
+p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.26px;
+    letter-spacing: 0.596154px;
+    color: #848484;
+    margin-top: 32px;
+    margin-bottom: 65px;
+}
+
+.button-section{
+
+    background: #ADFF00;
+    border: 1px solid #ADFF00;
+    border-radius: 50px;
+    width: 124px;
+    height: 51px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    color: #000000;
+    cursor: pointer;    
+    
+}
+
+.button-section:active{
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 900px){
+
+    .container-left{
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+        padding: 40px;
+        text-align: center;
+    }
+
+    header{
+        display: none;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+
+    img{
+        position: static;
+        max-width: 90%;
+        text-align: center;
+    }
+ 
+
+    h1{
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        margin: 24px 63px 61px 64px;
+    }
+
+    p{
+        display: none;
+    }
+
+    .button-section{
+        margin: 0 auto;
+        display: block;
+    }
+
+    
+}

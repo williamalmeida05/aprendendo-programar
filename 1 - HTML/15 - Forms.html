@@ -1,0 +1,31 @@
+<!-- FORMS
+
+    - Capturar dados de entrada
+    - Input -> Entrada
+
+    Action -> define para qual url será enviado os dados, vazio envia para mesma url 
+    Mehtod
+        - GET - altera url
+        - POST - não altera url, envia os dados por baixo dos panos
+-->
+
+<form action="" method="get" enctype="multipart/form-data">
+    <h1>Digite o seu endereço</h1>
+    <label>
+        Rua: 
+        <input type="text" name="rua" autocomplete="street-address"/>
+    </label>
+    
+    <label>
+        Número:
+        <input type="number" name="numero"/>
+    </label>
+
+    <label>
+        Email: 
+        <input type="email" name="email"/>
+    </label>
+
+    <button type="submit">Enviar dados</button>
+    <button type="reset">Reset</button>
+</form>
