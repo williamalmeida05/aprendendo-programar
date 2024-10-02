@@ -71,7 +71,6 @@ app.patch('/orders/:id', checkUserId, (request, response) => {
 
     return response.json(orders[index]);
 });
-
 // Iniciando o servidor
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} 🍔`);
