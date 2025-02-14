@@ -13,12 +13,16 @@
     - Middleware => INTERCEPTADOR => Tem o poder de parar ou alterar dados da requisição
 */
 
-const express = require('express')
-const uuid = require('uuid')
+import express from 'express';
+import cors from 'cors';
+import { v4 as uuidv4 } from 'uuid';
 
-const port = 3000
-const app = express()
-app.use(express.json())
+const app = express();
+const port = 3001;
+
+app.use(cors());
+app.use(express.json());
+
 
 const users = []
 
@@ -45,7 +49,7 @@ app.post('/users', (request, response) => {
 
     const {name, age} = request.body
     
-    const user = {id: uuid.v4(), name, age}
+    const user = {id: uuidv4(), name, age}
 
     users.push(user)
     return response.status(201).json(user)
@@ -75,6 +79,6 @@ app.delete('/users/:id',checkUserId, (request, response) => {
 
 
 app.listen(port, () => {
-    console.log(`👀 Server started on port 3000 ${port}`)
+    console.log(`👀 Server started on port 3001 ${port}`)
 })
 
