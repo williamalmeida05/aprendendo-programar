@@ -64,10 +64,10 @@ function App() {
 
         <div>
             <InputLabel>Pedido</InputLabel>
-            <Input ref={inputAge} placeholder="Pedido"></Input>
+            <Input ref={inputAge} ></Input>
 
             <InputLabel>Nome do Cliente</InputLabel>
-            <Input ref={inputName} placeholder="Nome do Cliente"></Input>
+            <Input ref={inputName}></Input>
         </div>
 
         <Button onClick={addNewUser}> Novo pedido</Button>
