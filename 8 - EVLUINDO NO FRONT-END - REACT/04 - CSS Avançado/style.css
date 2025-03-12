@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(161, 160, 160);
+    display: grid;
+
+    justify-content: center;
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px
+
+    
+
+    
+}
+
+.space{
+    color: black;
+    font-size: 30px;
+    background-color: rgb(162, 255, 68);
+}
+
+.one {
+    background-color: #FF5733; /* Laranja Vibrante */
+}
+
+.two {
+    background-color: #33FF57; /* Verde Limão */
+}
+
+.three {
+    background-color: #3357FF; /* Azul Intenso */
+}
+
+.four {
+    background-color: #FF33A8; /* Rosa Neon */
+}
+
+.five {
+    background-color: #A833FF; /* Roxo Vibrante */
+}
+
+.six {
+    background-color: #33FFF3; /* Ciano Brilhante */
+}
+
+.seven {
+    background-color: #FFD433; /* Amarelo Solar */
+}
+
+.eight {
+    background-color: #FF8C33; /* Laranja Queimado */
+}
+
+.nine {
+    background-color: #33A8FF; /* Azul Claro */
+}
